@@ -6,8 +6,8 @@ VERSION
     1.0
     
 AUTHOR
-	
-    
+Diego Carmona Campos
+
 DESCRIPTION
 	Make the reverse complement of DNA sequence
     
@@ -23,4 +23,5 @@ USAGE
     % python reverse-complement -i
 
 '''
+
 
