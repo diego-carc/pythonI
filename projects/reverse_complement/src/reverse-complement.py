@@ -6,8 +6,8 @@ VERSION
     2.0
     
 AUTHOR
-Diego Carmona Campos
-
+Diego Carmona Campos, Heladia Salgado
+ 
 DESCRIPTION
 	Make the reverse complement of DNA sequence
     
