@@ -6,7 +6,7 @@ VERSION
     2.0
     
 AUTHOR
-Diego Carmona Campos, Heladia Salgado
+Diego Carmona Campos, Heladia Salgado, Stochastic Mike
  
 DESCRIPTION
 	Make the reverse complement of DNA sequence
