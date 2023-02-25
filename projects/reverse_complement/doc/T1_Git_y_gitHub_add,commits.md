@@ -15,7 +15,7 @@ Git es un  controlador de versiones que nos permite llevar un registro de los ca
 
 Desde la terminal de comandos de Bash ejecuté el comando ***wget*** para descargar el archivo en mi escritorio:
 '''Bash
-wget -O e_coli_araC_secuence.fasta http://regulondb.ccg.unam.mx/sequence?type=GN&term=ECK120000050&format=fasta
+wget -O e_coli_araC_secuence.fna http://regulondb.ccg.unam.mx/sequence?type=GN&term=ECK120000050&format=fasta
 '''
 
 Ahora desde la terminal de comandos de Git, moví el archivo del escritorio al directorio ***data*** situado en la carpeta del projecto ***reverse_complement***.
