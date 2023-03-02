@@ -15,7 +15,6 @@ CATEGORY
 	Genomic Sequence
     
 USAGE
-	Diego Carmona Campos
     % python reverse-complement.py -i 
     
     example
