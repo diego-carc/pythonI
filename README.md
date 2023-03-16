@@ -1,11 +1,12 @@
 # pythonI
 Python Class LCG
+_Author: Diego Carmona Campos_
 
-### Author: Diego Carmona Campos
-
-## Summary
+## Introducción
 Este es un repositorio *dummy* utilizado para aprender Git y GitHub.
 
-## Building and Running pythonI Locally
+## Licencia
+(MIT)[LICENSE.md]
 
+## Building and Running pythonI Locally
 
