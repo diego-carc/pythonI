@@ -20,4 +20,4 @@ Output: un mensaje y el resultado
 5. Para obtener la subcadena, utilizo la notación *[:]*.
 
 ### **Resultados y conclusiones**
-Los resultados pueden encontrarse en [mi repositorio de github](https://github.com/diegocarcam/pythonI).
+Los resultados pueden encontrarse en [mi repositorio de github](https://github.com/diegocarcam/pythonI/tree/master/tareas/T1-Python).
