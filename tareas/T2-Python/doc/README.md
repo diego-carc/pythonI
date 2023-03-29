@@ -20,4 +20,4 @@ Usualmente un programa puede requerir de datos externos para trabajar en funció
 4. Para obtener el número de veces que se repite cada nucleótido, uso el método *count()*.
 
 ### **Resultados y conclusiones**
-Los resultados pueden encontrarse en [mi repositorio de github](https://github.com/diegocarcam/pythonI/).
+Los resultados pueden encontrarse en [mi repositorio de github](https://github.com/diegocarcam/pythonI/tree/master/tareas/T2-Python).
