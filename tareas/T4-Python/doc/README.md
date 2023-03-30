@@ -32,4 +32,4 @@ Se recomienda guardar el archivo de interés en la carpeta data y ejecutar el pr
 ***"../data/'nombre del archivo'"***
 
 ### **Resultados y conclusiones**
-Los resultados pueden encontrarse en [mi repositorio de github](https://github.com/diegocarcam/pythonI).
+Los resultados pueden encontrarse en [mi repositorio de github](https://github.com/diegocarcam/pythonI/tree/master/tareas/T4-Python).
