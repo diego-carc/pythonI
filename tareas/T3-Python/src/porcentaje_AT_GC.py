@@ -1,4 +1,11 @@
 '''
+T3-Python: Porcentaje de AT y GC
+
+Autor: Diego Carmona Campos
+
+Última Actualización: 29/03/2023
+
+Descripción:
 El programa calcula el porcentaje de GC y AT en la secuencia de DNA
 de un archivo, al cual se accede por medio de la ruta proporcionada 
 como input.

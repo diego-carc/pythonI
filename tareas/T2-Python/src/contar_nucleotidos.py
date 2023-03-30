@@ -1,4 +1,11 @@
 '''
+T2-Python: Contar As, Ts, Gs Cs
+
+Autor: Diego Carmona Campos
+
+Última actualización: 20/03/2023
+
+Descripción:
 Este programa recibe del usuario una secuencia de DNA y cuenta el
 contenido de cada nucleótido.
 '''
