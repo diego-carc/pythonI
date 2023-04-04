@@ -42,7 +42,7 @@ Ingrese el nombre o identificador de la secuencia: testing_dna_1
 se indicar en el OutPut. en el ejemplo estamos indicando que el archivo de salida sea generado en la carpeta `results`
 
 ```
-Ingrese el nombre o identificador de la secuencia: results/dna.fasta
+Ingrese el nombre o identificador de la secuencia: results/dna
 ```
 
 **OutPut**:
