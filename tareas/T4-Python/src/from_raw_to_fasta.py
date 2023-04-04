@@ -1,33 +1,57 @@
 '''
-T4-Python: From raw to fasta
+NAME
+    from_raw_to_fasta.py
+  
+VERSION
+    1.0  29/03/2023
 
-Autor: Diego Carmona Campos
 
-Última Actualización: 29/03/2023
+AUTHOR
+    Diego Carmona Campos
 
-Descripción:
-El programa recibe la ruta a un archivo de texto plano con 
+DESCRIPTION
+    El programa recibe la ruta a un archivo de texto plano con 
 una secuencia de DNA y lo convierte a formato fasta.
+
+CATEGORY
+   Sequence    
+
+USAGE
+
+    % python from_raw_to_fasta.py
+    
+    El programa pedirá 3 datos :
+    
+    a) archivo de entrada. Formato raw, que es la secuencia de DNA en una sola linea
+                            El nombre incluye path y nombre del archivo
+    b) identificador. Nombre o identificador de la secuencia, y será colocado como id en el formato fasTA
+    c) archivo de salida. Se colocará la secuencia formateada en fastA. Se debe incluir path y nombre del archivo.
+
+ARGUMENTS
+    None    
+
+SEE ALSO
+
 '''
 
-# Recibo del teclado el archivo de texto y los datos para crear el archivo fasta
-ruta = input("Ingrese la ruta al archivo con la secuencia de DNA: ")
-nombre = input("Ingrese el nombre para el archivo de salida: ")
-secuencia = input("Ingrese el nombre para la secuencia en el archivo fasta: ")
+# Recibir del teclado el archivo de de secuencia en formato raw
+input_file_name = input("Ingrese el nombre del archivo con la secuencia de DNA: ")
 
-# Abro el archivo de texto
-archivo = open(ruta)
+# Pedir el identificador para la secuencia
+identifier = input("Ingrese el nombre o identificador de la secuencia: ")
 
-# Creo un nuevo archivo para escritura
-nuevo = open(f'{nombre}.fasta', 'w') 
+# Pedir el nombre del archivo de salida y crearlo
+output_file_name = input("Ingrese el nombre para el archivo de salida (formato fastA): ")
+fp_output = open(f'{output_file_name}.fasta', 'w') 
 
-salto_de_linea = '\n' # Uso la variable para eliminar último salto de línea
+# Abrir y leer archivo de entrada con secuencia
+fp_input = open(input_file_name)
+dna_sequence = fp_input.read().rstrip('\n')
 
-# Escribo en el archivo la secuencia y su nombre
-nuevo.write(f"> {secuencia}\n{archivo.read().rstrip(salto_de_linea)}")
+# Guardar secuencia en formato fastA
+fp_output.write(f"> {identifier}\n{dna_sequence}\n")
 
-# Cierro los archivos
-archivo.close()
-nuevo.close()
+fp_input.close()
+fp_output.close()
 
-print('El archivo se ha convertido correctamente')
+print(f'El archivo {output_file_name} se ha creado correctamente')
