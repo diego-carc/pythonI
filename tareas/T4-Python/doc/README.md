@@ -1,4 +1,4 @@
-# T4-Python: Contenido de AT y GC
+# T4-Python: de raw to FastA
 
 ## Autor: Diego Carmona Campos
 ## Última actualización: 29/03/2023
@@ -12,14 +12,16 @@ Crear un archivo fasta a partir de la secuencia de DNA que está en `dna.txt`
 
 
 ### **Metodología**
-1. En la variable *ruta* almaceno la ruta hacia el archivo de texto con la secuencia de DNA.
-2. En la variable *nombre* almaceno el nombre para el archivo de salida en formato fasta.
-3. En la variable *secuencia* almaceno el nombre que se le agregará a la secuencia en el archivo fasta.
-4. Uso la variable *archivo* para abrir el archivo señalado por *ruta*.
-5. Con la variable *nuevo* creo el archivo fasta que se usará. Paso como argumento la variable *nombre* para nombrar este archivo.
-6. Usando el método *write*, escribo la secuencia de DNA en el archivo y le agrego el identificador.
-7. Usando el método *close* cierro los archivos.
-8. Al correr este código, generé el archivo *dna.fasta* que se encuentra en la carpeta *results* demeste proyecto.
+
+El algoritmo para resolver el problema es:
+
+1. Pedir el nombre del archivo con la secuencia de DNA, al usuario
+2. Pedir el nombre del archivo de salida, que será formato fastA
+3. Pedir el nombre o identificador de la secuencia apra colocarlo como id en el formato fastA
+4. Abrir y leear el archivo de entrada, con la secuencia de DNA
+5. Crear el archivo de salida 
+6. Escribir la secuencia de DNA en el archivo de salida en formato fastA
+
 
 Dado que la estructura de este proyecto es: 
 
