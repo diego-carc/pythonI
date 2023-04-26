@@ -1,26 +1,41 @@
 '''
-T1-Python: Secuencia de RNA
+NAME
+    secuencia_RNA.py
+  
+VERSION
+    1.1  26/04/2023
 
-Autor: Diego Carmona Campos
-Última actualización: 27/03/2023
 
-Descripción:
-Este programa imprime la secuencia de RNA que se transcribirá dada una secuencia de DNA.
-El codón de inicio que se utiliza es "TAC" y el codón de paro "ATT".
+AUTHOR
+    Diego Carmona Campos
+
+DESCRIPTION
+    El programa identifica los codones de inicio y término en una
+cadena de DNA e imprime la secuencia entre ellos.
+
+CATEGORY
+   Sequence    
+
+USAGE
+
+    % python secuencia_RNA.py
+    
+ARGUMENTS
+    None    
+
+SEE ALSO
+
 '''
 
-# Declaro una variable que almacene la secuencia de interés
-dna = 'AAGGTACGTCGCGCGTTATTAGCCTAAT'
+# Declarar las secuencias de interés
+dna_sequence = 'AAGGTACGTCGCGCGTTATTAGCCTAAT'
+initiation_codon = 'TAC'
+termination_codon = 'ATT'
 
-# Declaro variables que contengan los codones de interés
-cod_ini = 'TAC'
-cod_ter = 'ATT'
-
-# Imprimo el output
-print(f'La secuencia de DNA es: {dna}\n'
-      # Uso el método find para encontrar la posición del codón
-      f'El codón de inicio "{cod_ini}" se encuentra en la posición: {dna.find(cod_ini)}\n' 
-      f'EL codón de término "{cod_ter}" se encuentra en la posición: {dna.find(cod_ter)}\n'
-      # Uso la notación [:] para extraer una subcadena
-      f'La secuencia que se transcribirá en RNA es: {dna[dna.find(cod_ini):dna.find(cod_ter)]}' 
+# Imprimir el output
+print(f'La secuencia de DNA es: {dna_sequence}\n'
+      # Usar el método find para encontrar la posición del codón
+      f'El codón de inicio "{initiation_codon}" se encuentra en la posición: {dna_sequence.find(initiation_codon)}\n' 
+      f'EL codón de término "{termination_codon}" se encuentra en la posición: {dna_sequence.find(termination_codon)}\n'
+      f'La secuencia que se transcribirá en RNA es: {dna_sequence[dna_sequence.find(initiation_codon):dna_sequence.find(termination_codon)]}' 
       )

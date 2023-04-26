@@ -1,28 +1,49 @@
 '''
-T3-Python: Porcentaje de AT y GC
+NAME
+    porcentaje_AT_GC.py
+  
+VERSION
+    1.1  26/04/2023
 
-Autor: Diego Carmona Campos
 
-Última Actualización: 29/03/2023
+AUTHOR
+    Diego Carmona Campos
 
-Descripción:
-El programa calcula el porcentaje de GC y AT en la secuencia de DNA
-de un archivo, al cual se accede por medio de la ruta proporcionada 
-como input.
+DESCRIPTION
+    El proograma recibe un archivo con una secuencia de DNA y calcula
+el porcentaje de AT y GC.
+
+CATEGORY
+   Sequence    
+
+USAGE
+
+    % python porcentaje_AT_GC.py
+
+    El programa recibirá:
+
+      a) El nombre del archivo con la secuencia de DNA.
+      b) La ruta donde se encuentra el archivo. 
+    
+ARGUMENTS
+    None    
+
+SEE ALSO
+
 '''
 
-# Recibo del teclado la ruta al archivo
-nombre = input('Ingrese el nombre del archivo con la secuencia de DNA: ')
-ruta = input('Ingrese la ruta al archivo: ')
+# Recibir del teclado la ruta al archivo
+file_name = input('Ingrese el nombre del archivo con la secuencia de DNA: ')
+path = input('Ingrese la ruta al archivo: ')
 
-# Abro el archivo
-dna = open(ruta+nombre).read().rstrip('\n')
+# Abrir el archivo
+dna_sequence = open(path+file_name).read().rstrip('\n')
 
-# Calculo los porcentajes usando métodos de string
-porcentaje_GC = (dna.count("G") + dna.count("C"))*100/len(dna) 
-porcentaje_AT = (dna.count("A") + dna.count("T"))*100/len(dna)
+# Calcular los porcentajes
+porcentaje_GC = (dna_sequence.count("G") + dna_sequence.count("C"))*100/len(dna_sequence) 
+porcentaje_AT = (dna_sequence.count("A") + dna_sequence.count("T"))*100/len(dna_sequence)
 
-# Imprimo el output
+# Imprimir el output
 print(f'El procentaje de GC es: {porcentaje_GC}%\n'
       f'El porcentaje de AT es: {porcentaje_AT}%\n'
       )

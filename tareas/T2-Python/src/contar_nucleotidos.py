@@ -1,24 +1,44 @@
 '''
-T2-Python: Contar As, Ts, Gs Cs
+NAME
+    contar_nucleotidos.py
+  
+VERSION
+    1.1  26/04/2023
 
-Autor: Diego Carmona Campos
 
-Última actualización: 20/03/2023
+AUTHOR
+    Diego Carmona Campos
 
-Descripción:
-Este programa recibe del usuario una secuencia de DNA y cuenta el
-contenido de cada nucleótido.
+DESCRIPTION
+    El programa recibe del teclado una secuencia de DNA y cuenta el
+contenido de A's, T's, C's y G's.
+
+CATEGORY
+   Sequence    
+
+USAGE
+
+    % python contar_nucleotidos.py
+
+    El programa recibirá:
+      
+      a) La secuencia de DNA como un string desde el teclado.
+    
+ARGUMENTS
+    None    
+
+SEE ALSO
+
 '''
 
-# Uso la función input() para recibir una entrada del teclado
-dna = input('Ingrese la secuencia de DNA: ')
+# Recibir secuencia de DNA desde el teclado
+dna_sequence = input('Ingrese la secuencia de DNA: ')
 
-# Utilizo fstrings dentro de la función print para imprimir el output
+# Imprimir el output
 print(f'El contenido de los nucleótidos es:\n'
-      # El método count de un string me permite contar las repeticiones de un caracter
-       f'A: {dna.count("A")}\n'
-       f'T: {dna.count("T")}\n'
-       f'C: {dna.count("C")}\n'
-       f'G: {dna.count("G")}'
+       f'A: {dna_sequence.count("A")}\n'
+       f'T: {dna_sequence.count("T")}\n'
+       f'C: {dna_sequence.count("C")}\n'
+       f'G: {dna_sequence.count("G")}'
        )
 
