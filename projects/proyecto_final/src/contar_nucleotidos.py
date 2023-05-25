@@ -3,7 +3,7 @@ NAME
     contar_nucleotido.py
   
 VERSION
-    2.0  05/05/2023
+    2.0  24/05/2023
 
 
 AUTHOR
