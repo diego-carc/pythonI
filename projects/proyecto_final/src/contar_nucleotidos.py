@@ -45,10 +45,10 @@ def count_ATCG(dna_sequence):
     Cuenta los nucleótidos A, T, C y G de una secuencia de DNA.
 
     Args:
-        dna_sequence: El string con la secuencia de DNA.
+        dna_sequence (str): Secuencia de DNA.
     
     Returns:
-        Un diccionario cuyos keys son las vasaes y cada value es el conteo de la base.
+        Un diccionario cuyos keys son las bases y cada value es el conteo de la base.
     '''
     bases = ['A', 'T', 'C', 'G']
     bases_count = {base : dna_sequence.count(base) for base in bases}
