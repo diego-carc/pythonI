@@ -38,7 +38,7 @@ SEE ALSO
 # Imports
 import argparse 
 import re 
-import sys
+
 # Functions
 def count_ATCG(dna_sequence):
     '''
@@ -76,8 +76,6 @@ args = parser.parse_args()
 
 # Abrir archivo
 try:
-    print(args.path + args.file_name)
-    sys.exit()
     input_file = open(args.path + args.file_name)
     dna_sequence = input_file.read().rstrip('\n').upper()
     dna_sequence = dna_sequence.split('\n')

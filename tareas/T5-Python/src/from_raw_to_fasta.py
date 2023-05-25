@@ -49,10 +49,7 @@ description = 'El programa genera un archivo en formato fasta a partir de un arc
 parser = argparse.ArgumentParser(description=description)
 parser.add_argument('path',
                     type=str,
-                    help='La ruta a la ubicación del archivo con la secuencia de DNA')
-parser.add_argument('file_name',
-                    type=str,
-                    help='El nombre del archivo con la secuencia de DNA')
+                    help='La ruta con la ubicación y el nombre del archivo con la secuencia de DNA')
 parser.add_argument('identifier', 
                     type=str, 
                     help='El identificador para la seucencia')
@@ -76,7 +73,7 @@ args = parser.parse_args()
 
 # Abrir archivo
 try:
-    file = open(args.path + args.file_name)
+    file = open(args.path)
     dna_sequence = file.read().rstrip('\n').upper()
     dna_sequence = dna_sequence.split('\n')
     dna_sequence = ''.join(dna_sequence)

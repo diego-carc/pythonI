@@ -49,6 +49,9 @@ def get_AT_content(dna_sequence, r=2):
     Args:
         dna_sequence: El string con la secuencia de DNA
         r: El número de decimales para redondear la respuesta
+    
+    Returns:
+        El contenido de AT, con el número de decimales indicado por el usuario
     '''
     seguence_lenght = len(dna_sequence)
     A_content = dna_sequence.count('A')
@@ -65,10 +68,7 @@ description = 'El programa calcula el porcentaje de AT de secuencia de DNA prove
 parser = argparse.ArgumentParser(description=description)
 parser.add_argument('path',
                     type=str,
-                    help='La ruta a la ubicación del archivo con la secuencia de DNA.')
-parser.add_argument('name',
-                    type=str,
-                    help='El nombre del archivo con la secuencia de DNA')
+                    help='La ruta con la ubicación y el nombre del archivo con la secuencia de DNA.')
 parser.add_argument('-r', 
                     type=int, help='El número de decimales para la respuesta', 
                     required=False,
@@ -79,7 +79,7 @@ args = parser.parse_args()
 
 # Abrir archivo
 try:
-    file = open(args.path + args.name)
+    file = open(args.path)
     dna_sequence = file.read().rstrip('\n').upper()
     dna_sequence = dna_sequence.split('\n')
     dna_sequence = ''.join(dna_sequence)
