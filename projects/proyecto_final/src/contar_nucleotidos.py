@@ -3,7 +3,7 @@ NAME
     contar_nucleotido.py
   
 VERSION
-    2.0  05/05/2023
+    2.0  24/05/2023
 
 
 AUTHOR
@@ -48,7 +48,7 @@ def count_ATCG(dna_sequence):
         dna_sequence (str): Secuencia de DNA.
     
     Returns:
-        Un diccionario cuyos keys son las bases y cada value es el conteo de la base.
+        Un diccionario cuyos keys son las basaes y cada value es el conteo de la base.
     '''
     bases = ['A', 'T', 'C', 'G']
     bases_count = {base : dna_sequence.count(base) for base in bases}
@@ -60,21 +60,19 @@ class AmbiguousBaseError(Exception):
     pass
 
 # Iniciar el parseador 
-description = 'El programa cuenta los nucleótidos (As, Ts, Cs y Gs)\nde una secuencia de DNA proveniente de un archivo.'
+description = 'El programa cuenta los nucleótidos (As, Ts, Cs y Gs)\nde una secuencia de DNA proveniente de un archivo'
 parser = argparse.ArgumentParser(description=description)
 parser.add_argument('path',
                     type=str,
-                    help='La ruta con la ubicación del archivo con la secuencia de DNA.')
-parser.add_argument('file_name',
-                    type=str,
-                    help='El nombre del archivo con la secuencia de DNA')
+                    help='La ruta con la ubicación y el nombre del archivo con la secuencia de DNA.')
+
 
 # Parsear argumentos
 args = parser.parse_args()
 
 # Abrir archivo
 try:
-    input_file = open(args.path + args.file_name)
+    input_file = open(args.path)
     dna_sequence = input_file.read().rstrip('\n').upper()
     dna_sequence = dna_sequence.split('\n')
     dna_sequence = ''.join(dna_sequence)
@@ -91,7 +89,7 @@ except IOError:
 except ValueError:
     print('El archivo está vacío')
 except AmbiguousBaseError:
-    print('El archivo contiene bases ambigüas.')
+    print('El archivo contiene bases ambigüas')
 else:
     count = count_ATCG(dna_sequence)
     for key, value in count.items():
