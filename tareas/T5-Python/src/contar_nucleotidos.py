@@ -1,6 +1,6 @@
 '''
 NAME
-    contar_nucleotidos_v2.0.py
+    contar_nucleotido.py
   
 VERSION
     2.0  05/05/2023
@@ -18,7 +18,7 @@ CATEGORY
 
 USAGE
 
-    % python contar_nucleotidos_v2.0.py
+    % python contar_nucleotidos.py
 
     El programa recibirá:
       
@@ -34,6 +34,7 @@ ARGUMENTS
 
 SEE ALSO
 '''
+
 # Imports
 import argparse 
 import re 
@@ -44,12 +45,15 @@ def count_ATCG(dna_sequence):
     Cuenta los nucleótidos A, T, C y G de una secuencia de DNA.
 
     Args:
-        dna_sequence: El string con la secuencia de DNA
+        dna_sequence: El string con la secuencia de DNA.
+    
+    Returns:
+        Un diccionario cuyos keys son las vasaes y cada value es el conteo de la base.
     '''
-
     bases = ['A', 'T', 'C', 'G']
-    for base in bases:
-        print(f'La secuencia tiene {dna_sequence.count(base)} {base}\'s')
+    bases_count = {base : dna_sequence.count(base) for base in bases}
+    return(bases_count)
+    
 
 # Main
 # Definir errores
@@ -90,4 +94,6 @@ except ValueError:
 except AmbiguousBaseError:
     print('El archivo contiene bases ambigüas.')
 else:
-    count_ATCG(dna_sequence)
+    count = count_ATCG(dna_sequence)
+    for key, value in count.items():
+        print(f'La secuencia tiene {value} {key}s')

@@ -1,6 +1,6 @@
 '''
 NAME
-    from_raw_to_fasta_v2.0.py
+    from_raw_to_fasta.py
   
 VERSION
     2.0  05/05/2023
@@ -17,7 +17,7 @@ CATEGORY
 
 USAGE
 
-    % python from_raw_to_fasta_v2.0.py
+    % python from_raw_to_fasta.py
     
 ARGUMENTS
 

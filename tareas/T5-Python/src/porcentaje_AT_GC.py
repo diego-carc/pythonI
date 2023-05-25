@@ -1,6 +1,6 @@
 '''
 NAME
-    porcentaje_AT_GC_v2.0.py
+    porcentaje_AT_GC.py
   
 VERSION
     2.0  05/05/2023
@@ -17,7 +17,7 @@ CATEGORY
 
 USAGE
 
-    % python porcentaje_AT_GC_v2.0.py
+    % python porcentaje_AT_GC.py
 
     El programa recibirá:
 
