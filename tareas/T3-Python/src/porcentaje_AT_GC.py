@@ -37,7 +37,9 @@ file_name = input('Ingrese el nombre del archivo con la secuencia de DNA: ')
 path = input('Ingrese la ruta al archivo: ')
 
 # Abrir el archivo
-dna_sequence = open(path+file_name).read().rstrip('\n')
+dna_file = open(path+file_name)
+
+dna_sequence = dna_file.read().rstrip('\n')
 
 # Calcular los porcentajes
 porcentaje_GC = (dna_sequence.count("G") + dna_sequence.count("C"))*100/len(dna_sequence) 
@@ -47,3 +49,5 @@ porcentaje_AT = (dna_sequence.count("A") + dna_sequence.count("T"))*100/len(dna_
 print(f'El procentaje de GC es: {porcentaje_GC}%\n'
       f'El porcentaje de AT es: {porcentaje_AT}%\n'
       )
+
+dna_file.close()
