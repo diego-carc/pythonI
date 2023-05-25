@@ -17,8 +17,7 @@ El algoritmo para resolver el problema es:
 3. Verificar que el archivo no esté vacío.
 4. Guardar la secuencia de DNA en un solo *string*, eliminando saltos de
 5. Verificar que la secuencia no contenga bases ambigüas.
-6. Llamar a la función *define_who_wins()* para imprimir el resultado.
-7. Imprimir el resultado
+6. Imprimir el resultado
 
 
 ### Instalación
