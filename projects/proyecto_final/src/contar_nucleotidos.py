@@ -3,7 +3,7 @@ NAME
     contar_nucleotido.py
   
 VERSION
-    2.0  24/05/2023
+    2.0  05/05/2023
 
 
 AUTHOR
@@ -54,7 +54,6 @@ def count_ATCG(dna_sequence):
     bases_count = {base : dna_sequence.count(base) for base in bases}
     return(bases_count)
     
-
 # Main
 # Definir errores
 class AmbiguousBaseError(Exception):
@@ -69,7 +68,6 @@ parser.add_argument('path',
 parser.add_argument('file_name',
                     type=str,
                     help='El nombre del archivo con la secuencia de DNA')
-
 
 # Parsear argumentos
 args = parser.parse_args()
@@ -98,3 +96,4 @@ else:
     count = count_ATCG(dna_sequence)
     for key, value in count.items():
         print(f'La secuencia tiene {value} {key}s')
+
