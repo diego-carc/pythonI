@@ -18,19 +18,16 @@ CATEGORY
 
 USAGE
 
-    % python contar_nucleotidos.py path file_name
+    % python contar_nucleotidos.py path 
 
     El programa recibirá:
       
-      a) La ruta al archivo
+      a) La ruta al archivo con su nombre
 
-      b) El nombre del archivo
-    
 ARGUMENTS
 
     path: La ruta a la ubicación del archivo con la secuencia de DNA.
 
-    file_name: El nombre del archivo con la secuencia de DNA. 
 
 SEE ALSO
 '''
