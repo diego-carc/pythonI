@@ -14,7 +14,8 @@ DESCRIPTION
 el porcentaje de AT y GC.
 
 CATEGORY
-   Sequence    
+   Sequence
+   Bioinformatics    
 
 USAGE
 
