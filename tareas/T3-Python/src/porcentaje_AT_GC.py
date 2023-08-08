@@ -7,7 +7,7 @@ VERSION
 
 
 AUTHOR
-    Diego Carmona Campos
+    Diego "El caballo de fuego" Carmona Campos
 
 DESCRIPTION
     El proograma recibe un archivo con una secuencia de DNA y calcula
