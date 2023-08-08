@@ -28,7 +28,7 @@ SEE ALSO
 '''
 
 # Declarar las secuencias de interés
-dna_sequence = 'AAGGTACGTCGCGCGTTATTAGCCTAAT'
+dna_sequence = 'AAGGTACGTCGCGCGTTACGGCGATTATTTAGCCGCGCGAGACGTAGCAGCTAAAGATCGACATTAGCCTAAT'
 initiation_codon = 'TAC'
 termination_codon = 'ATT'
 
