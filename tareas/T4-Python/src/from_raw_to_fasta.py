@@ -31,7 +31,7 @@ ARGUMENTS
     None    
 
 SEE ALSO
-
+	Me he convertido en Ãla muerte, el destructor de mundos.
 '''
 
 # Recibir del teclado el archivo de de secuencia en formato raw
