@@ -3,7 +3,7 @@ NAME
     secuencia_RNA.py
   
 VERSION
-    1.1  26/04/2023
+    1.1  22/08/2023
 
 
 AUTHOR
