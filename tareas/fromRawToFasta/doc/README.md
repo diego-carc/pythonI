@@ -33,4 +33,4 @@ ouput:
 El archivo de salida se encuentra en la carpeta *results*
 
 ### **Resultados y conclusiones**
-Los resultados pueden encontrarse en [mi repositorio de github](https://github.com/diegocarcam/pythonI/tree/master/tareas/T4-Python).
+Los resultados pueden encontrarse en [mi repositorio de github](https://github.com/diego-carc/pythonI/tree/master/tareas/fromRawToFasta).

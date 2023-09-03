@@ -41,4 +41,4 @@ La secuencia no tiene un marco de lectura abierto
 ```
 
 ### **Resultados y conclusiones**
-Los resultados pueden encontrarse en [mi repositorio de github](https://github.com/diegocarcam/pythonI/tree/master/tareas/T1-Python).
+Los resultados pueden encontrarse en [mi repositorio de github](https://github.com/diego-carc/pythonI/tree/master/tareas/secuenciaRNA).

@@ -33,4 +33,4 @@ El porcentaje de AT es: 48.86116062586651%
 ```
 
 ### **Resultados y conclusiones**
-Los resultados pueden encontrarse en [mi repositorio de github](https://github.com/diegocarcam/pythonI/tree/master/tareas/T3-Python).
+Los resultados pueden encontrarse en [mi repositorio de github](https://github.com/diego-carc/pythonI/tree/master/tareas/porcentajeATCG).

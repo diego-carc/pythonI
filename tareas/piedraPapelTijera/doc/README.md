@@ -61,3 +61,6 @@ La computadora eligió: Piedra
 Ganaste el juego 3 de 3
 Gracias por jugar 
 ```
+
+### Resultados
+Los resultados pueden ser encontrados en [mi repositorio de GitHub](https://github.com/diego-carc/pythonI/tree/master/tareas/piedraPapelTijera)
