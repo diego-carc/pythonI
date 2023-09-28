@@ -47,3 +47,4 @@ try: seq = SeqIO.parse(f, format="fastq")
 except : print(f"The file {f} doesn't exist")
 print(len([m for record in seq 
            if (m:=mean([int(q) for q in record.letter_annotations["phred_quality"]])) < t]))
+ 
