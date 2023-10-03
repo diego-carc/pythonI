@@ -44,7 +44,10 @@ args = parser.parse_args()
 t = args.treshold
 f = args.file
 try: seq = SeqIO.parse(f, format="fastq")
-except : print(f"The file {f} doesn't exist")
+except : 
+    print(f"The file {f} doesn't exist")
+    exit()
+    
 print(len([m for record in seq 
            if (m:=mean([int(q) for q in record.letter_annotations["phred_quality"]])) < t]))
  
